@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+/* Perus Flexbox grid*/
+.tpf_flex-grid {
+    display: flex;
+}
+
+.tpf_col {
+    flex: 1;
+}
+
+.tpf_col-vertical {
+    flex-direction: column;
+}
+
+/* Responsiivinen kuva */
+.tpf_img-responsive {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.tpf_info-box-grid {
+    height: 800px;
+    flex-direction: row;
+    flex-flow: row wrap;   
+}
+
+.tpf_info-grid-column {
+   display: block; 
+   height: 400px;
+}
+
+/* Flexbox lohkojen järjestys */
+.tpf_info-col-1 {
+    order: 1;
+}
+.tpf_info-col-2 {
+    order: 2;
+}
+.tpf_info-col-3 {
+    order: 3;
+}
+
+.tpf_info-col-1-text {
+    order: 1;
+}
+.tpf_info-col-1-img {
+    order: 2;
+}
+.tpf_info-col-2-text {
+    order: 2;
+}
+.tpf_info-col-2-img {
+    order: 1;
+}
+.tpf_info-col-3-text {
+    order: 1;
+}
+.tpf_info-col-3-img {
+    order: 2;
+}
+
+
+.tpf_info-box-container {
+    display: block;
+    position: relative;
+}
+
+.tpf_info-box-bg {
+    position: absolute;
+    display: inline-block;
+    background: rgb(245,245,245);
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.tpf_info-box-bg>p {
+    font-family: Barlow Semi Condensed;
+    font-size: 300px;
+    font-weight: 600;
+    margin: 0 auto;
+    opacity: 0.1;
+    color: #000000;
+}
+
+
+
+
+.tpf_info-box {
+    position: absolute;
+    text-align: center;
+    color: #000000;
+}
+
+.tpf_info-box>h2 {
+    font-family: Barlow Semi Condensed;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tpf_info-box>p {
+    font-family: Barlow Semi Condensed;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+}
+
+.tpf_info-image-container {
+    display: block;
+    height: 400px;
+    width: auto;
+    margin: 0;
+}
+
+.tpf_info-box-image {
+    height: 400px;
+
+}
+
+@media (max-width: 960px) {
+    .tpf_flex-grid {
+        flex-direction: column;
+    }
+
+    .tpf_info-box>p {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+
+    .tpf_info-col-1 {
+        order: 1;
+    }
+    .tpf_info-col-2 {
+        order: 3;
+    }
+    .tpf_info-col-3 {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .tpf_info-box-bg>p {
+        font-size: 275px;
+        margin-top: 20px;
+    }
+
+    .tpf_info-box>p {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .tpf_info-box-bg>p {
+        font-size: 250px;
+        margin-top: 36px;
+    }
+    .tpf_info-box>p {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}

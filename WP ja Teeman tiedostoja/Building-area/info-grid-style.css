@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* GRID BASE*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 480px);
+    border: 1px solid black;
+}
+
+.all-items {
+    border: 1px solid black;
+}
+
+.text1 {
+    order: 1;
+}
+
+.img1 {
+    order: 4;
+}
+.text2 {
+    order: 3;
+    background: red;
+}
+
+.img2 {
+    order: 6;
+}
+.text3 {
+    order: 5;
+    background: blue;
+}
+
+.img3 {
+    order: 2;
+}
+
+@media (max-width: 960px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+    }
+
+    .text1 {
+        order: 1;
+    }
+    
+    .img1 {
+        order: 2;
+    }
+    .text2 {
+        order: 3;
+    }
+    
+    .img2 {
+        order: 4;
+    }
+    .text3 {
+        order: 5;
+    }
+    
+    .img3 {
+        order: 6;
+    }
+} 
+
+/* IMAGES */
+
+figure {
+    margin: 0;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.grid-image {
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+/* INFO-BOXES */
+
+.text-items {
+
+}
+
+.text-container {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.infobox-background {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+}
+
+.infobox-text {
+    position: absolute
+}

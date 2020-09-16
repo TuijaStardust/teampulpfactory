@@ -1,0 +1,19 @@
+#Ignore vscode settings file
+.vscode
+
+#Ignore media files
+Kuvia
+tpf_logot
+*.png
+*.jpg
+*.mp4
+
+
+
+#Ignore layout files
+Sivut
+*.pdf
+
+#Ignore Boldlab theme files
+themeforest-cNFGrO8z-boldlab-creative-agency-theme
+Themes

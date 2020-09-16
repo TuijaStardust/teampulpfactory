@@ -1,0 +1,708 @@
+/* 2020-08-05 /by Tuija Stardust */
+
+/* --GLOBAALIT MUUTOKSET-- */
+
+/* CRAP CODE */
+
+.tpf_dash {
+	line-height: 2px !important;
+}
+
+/* SPACES */
+
+.tpf_space-fourty {
+	margin-top: 40px;
+}
+
+.tpf_space-eighty {
+	margin-top: 80px;
+}
+
+.tpf_space-onetwenty {
+	margin-top: 120px;
+}
+
+.tpf_space-bottom-fourty {
+    margin-bottom: 40px;
+}
+
+.tpf_space-bottom-eighty {
+	margin-bottom: 80px;
+}
+
+
+
+/* Ylimääräinen tyhjä pois sivun alusta ja lopusta */
+
+#qodef-page-inner {
+    padding: 0;
+}
+
+/* display asetus */
+.tpf-block {
+	display: block;
+}
+
+/* TYPOGRAFIA */
+
+/* Siniset linkit paragrafitekstissä */
+p a {
+    color: #4200ff;
+}
+
+.tpf_italic {
+	font-style: italic;
+}
+
+/* HEADER */
+
+/* Navigaation täppien yläreunan tasaus*/
+
+.qodef-header-navigation>ul>li {
+    height: 100%;
+    padding: 0 24px;
+    align-self: baseline;
+}
+
+/* Header - Sticky header säätö ettei valu näkyviin */
+
+.qodef-header-sticky {
+    height: 160px;
+}
+
+/* Header - Logon leveyden säätö*/
+#qodef-page-header .qodef-header-logo-link img {
+    width: 100%;
+}
+
+/* ETUSIVU */
+
+.tpf_front-main-titlearea {
+	margin-bottom: 20px;
+}
+
+.tpf_front-main-titlearea>h1 {
+	font-family: Barlow Condensed, sans-serif;
+	padding-top: 20px;
+	font-size: 62px;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+.tpf_front-description {
+	max-width: 80%; 
+}
+
+.tpf_front-description>p {
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 800;
+}
+
+/* Info-boxi gridi */
+
+/* FLEXBOX GRID */
+
+/* 1st level*/
+.tpf_flexbox-grid {
+    display: flex;
+    max-width: 1300px;
+}
+
+/* 2nd level */
+.tpf_columns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    height: 960px;
+}
+
+/* Order of elements */
+.tpf_column-1 {
+    order: 1;
+}
+    .tpf_info-1 {
+        order: 1;
+    }
+    .tpf_image-1 {
+        order: 2;
+    }
+
+.tpf_column-2 {
+    order: 3;
+}
+    .tpf_info-2 {
+        order: 1;
+    }
+    .tpf_image-2 {
+        order: 2;
+    }
+
+.tpf_column-3 {
+    order: 2;
+}
+    .tpf_info-3 {
+        order: 2;
+    }
+    .tpf_image-3 {
+        order: 1;
+    }
+
+/* 3rd level */
+
+/* Info-text element */
+.tpf_info-container {
+    position: relative;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex: 1;
+    background: rgb(245, 245, 245);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.tpf_info-container>a {
+		text-decoration: none;
+   	color: #000000;
+}
+    .tpf_info-background {
+        position: absolute;
+        color: #000000;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 300px;
+        font-weight: 600;
+        opacity: 0.1;
+    }
+        .tpf_info-background>p {
+            margin-top: 40%;
+        }
+
+    .tpf_info-text {
+        position: absolute;
+        color: #000000;
+        text-align: left;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+
+        .tpf_info-text>a>h2 {
+            font-weight: 900;
+            font-size: 32px;
+            padding-top: 40px;
+            padding-right: 30px;
+        }
+
+        .tpf_info-text>a>p {
+            font-weight: 800;
+					text-transform: none;
+            margin-top: 30px;
+						margin-bottom: 0;
+            padding-right: 30px;
+        }
+
+				.tpf_info-text>a {	
+						font-weight: 700;
+						color: #4200ff;
+						line-height: 18px;
+				}
+
+/* Image element */    
+.tpf_image-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    height: 50%;
+    width: auto;
+    margin: 0;
+}
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tpf_responsive-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+/* -- Screens smaller than 960px -- */
+
+@media (max-width: 960px) {
+    .tpf_flexbox-grid {
+        flex-direction: column;
+    }   
+
+		.tpf_info-background>p {
+            margin-top: 18%;
+        }
+	
+    /* Order of elements */
+    .tpf_column-1 {
+        order: 1;
+    }
+        .tpf_info-1 {
+            order: 1;
+        }
+        .tpf_image-1 {
+            order: 2;
+        }
+
+    .tpf_column-2 {
+        order: 2;
+    }
+        .tpf_info-2 {
+            order: 1;
+        }
+        .tpf_image-2 {
+            order: 2;
+        }
+
+    .tpf_column-3 {
+        order: 3;
+    }
+        .tpf_info-3 {
+            order: 1;
+        }
+        .tpf_image-3 {
+            order: 2;
+        }
+    
+    .tpf_info-text {
+        padding-left: 80px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+	.tpf_info-background>p {
+            margin-top: 24%;
+        }
+}
+
+@media (max-width: 680px) {
+		.tpf_info-background>p {
+            margin-top: 34%;
+        }
+}
+
+@media (max-width: 480px) {
+		.tpf_info-background>p {
+            margin-top: 42%;
+        }
+	
+    .tpf_info-text {
+        padding-top: 0;
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+}
+
+/* PORTFOLIO GALLERY (LIST) */
+ 
+.tpf_portfo-hover-text {
+	margin: 5px 0;
+}
+
+.tpf_portfo-list-titlebox>h5 {
+	font-size: 16px;
+	color: rgb(190, 190, 190);
+	margin-bottom: 0;
+}
+
+.tpf_portfo-list-titlebox>h4 {
+	margin-top: 4px;
+}
+
+/* Creative Services & Production Agency*/
+
+.tpf_services-title {
+	font-family: Barlow Semi Condensed;
+}
+
+.tpf_services-textbox>p {
+	text-transform: none;
+}
+
+.tpf_services-strongtext {
+	font-weight: 800;
+}
+
+.tpf_services-textbox>p>a {
+	text-transform: uppercase;
+}
+
+/* Model Management */
+
+.tpf_mm-textbox>p {
+	font-weight: 700;
+}
+
+.tpf_mm-textbox>p>a {
+	text-transform: uppercase;
+}
+
+/* Talent Platform */
+
+.tpf_tp-textbox>p {
+	font-weight: 700;
+}
+
+.tpf_tp-textbox>p>a {
+	text-transform: uppercase;
+}
+
+/* PORTFOLIO SINGLE PAGE*/
+
+.tpf_single-contentbox {
+	margin-top: 80px;
+}
+
+.tpf_single-title-style {
+	font-size: 34px;
+	font-weight: 900;
+}
+
+.tpf_portfo-title-categories {
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.tpf_portfo-title-categories>a {
+	color: #000000;
+}
+
+.qodef-portfolio-single-item .qodef-portfolio-info a {
+	color: #000000;
+	font-weight: 600;
+}
+
+.qodef-portfolio-info-item>a {
+	font-family: Barlow Condensed;
+	text-transform: uppercase;	
+}
+/* Social follow icons*/
+.tpf_social-follow-linkbox {
+	display: flex;
+	align-items: center;
+}
+
+h5.tpf_social-follow-kavyar {
+	font-size: 22px;
+}
+
+.tpf_social-follow-link {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.tpf_social-follow-kavyar {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.tpf_kavyar-link {
+	font-family: Barlow Condensed;
+	text-transform: uppercase;
+}
+
+.tpf_social-icon-size {
+	font-size: 22px;
+}
+
+/* CONTACT US_*/
+
+.tpf_cu-textbox>p {
+	font-weight: 700;
+}
+
+.tpf_cu-textbox>p>a {
+	text-transform: uppercase;
+}
+
+.tpf_application-text {
+	margin-bottom: 80px;
+}
+
+.tpf_application-text>p {
+	margin-bottom: 25px;
+}
+
+.tpf_cu-application-strongtext {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+/* FOOTER */
+
+/*Footer - korkeuden säätö */
+#qodef-page-footer-top-area {
+    padding: 70px 0 20px;
+}
+
+/* Footer - Widget otsikot*/
+.qodef-widget-title {
+    font-size: 36px;
+}
+
+/* Footer - ensimmäinen kolumni */
+
+.footer-text>p {
+    color: white;
+    font-family: Barlow condensed, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* footerin iconi+teksti rivien tekstin säädöt */
+.qodef-icon-list-item>p {
+    font-size: 21px;
+    font-weight: 800;
+}
+
+/* Footer - keskimmäinen kolumni*/
+#nav_menu-2 #nav-menu-3 {
+    padding-left: 16%;
+}
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) li {
+    margin: 0;
+    font-family: Barlow condensed, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Instagram - neliö */
+
+.instafooter {
+    filter: grayscale(100%);
+}
+
+#sb_instagram .sbi_photo img {
+    max-width: 400px;
+    max-height: 400px;
+		object-fit: cover;
+}
+
+/* Info Section taustanumero/-kirjan */
+
+.qodef-info-section.qodef-layout--background-text.qodef-background-text-pos--center .qodef-m-background-text {
+    font-size: 300px;
+    font-weight: 600;
+}
+
+/* MODUULIT */
+
+/* Custom built quote thingie */
+
+.tpf_circle-box,
+.tpf_quote-box {
+	display: flex;
+	flex-flow: row nowrap;
+	/*justify-content: center;*/
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.tpf_flex-center {
+	justify-content: center;
+}
+
+.tpf_quote-icon {
+	max-width: 100px;
+	height: auto;
+}
+
+.tpf_front-quote-textbox,
+.tpf_quote-textbox {
+	padding-left: 20px;
+}
+
+.tpf_quote-textbox>h3  {
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+.tpf_quote-textbox>p {
+	margin: 4px 0;
+}
+
+.tpf_front-quote-textbox>h3 {
+	margin: 0;
+}
+
+.tpf_front-quote-textbox>p {
+	margin: 2px 0;
+}
+
+.tpf_front-quote-lineheight {
+	line-height: 18px;
+}
+
+.tpf_front-quote-textbox>p>a {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.tpf_quote-textbox>p>a {
+	font-size: 35px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.tpf_quote-textbox>h3>a {
+	color: #4200ff;
+}
+
+.tpf_padding-left-six {
+	padding-left: 6px;
+}
+
+.tpf_tiny-text {
+	text-transform: none;
+	font-weight: 700;
+}
+
+.tpf_tiny-line-height {
+	line-height: 2px;
+}
+
+.tpf_high-line-height {
+	line-height: 30px;
+}
+
+/* CIRCLE ICON CONTACT US -BLOCK */
+
+.tpf_circle-icon {
+	max-width: 180px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+	.tpf_circle-box {
+		flex-direction: column;
+	}
+}
+
+/* MEMBERS OF AREA */
+.tpf_memberbox {
+  display: block;
+  max-width: 1300px;
+}
+
+.tpf_member-titlebox {
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	align-items: center;
+	align-content: stretch;
+}
+
+.tpf_member-title {
+	display: inline-block;
+	font-family: Barlow Condensed ;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	vertical-align: baseline;
+	line-height: 1em;
+	margin: 0;
+	flex: 0 0 160px;
+}
+
+.tpf_member-title-line-container {
+	display: inline-block;
+	height: 1px;
+	min-width: 5%;
+	flex: 1 2 auto;
+}
+
+.tpf_member-hr {
+	display: block;
+	width: 100%;
+	border-top: 1px solid #000000;
+}
+
+/* icons */ 
+
+.tpf_member-flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.tpf_member-icon {
+	max-width: 100%;
+	height: auto; 
+	padding:0 10px;
+}
+
+/* Under Construction sivun tekstit */
+
+.uc_paragraph {
+	font-size: 24px;
+}
+
+.uc_space {
+	padding-top: 40px;
+}
+
+.uc_smallspace {
+	padding-top: 20px;
+}
+
+.uc_bigspace {
+	padding-top: 60px;
+}
+
+.uc_hugespace {
+	padding-top: 80px;
+}
+
+.uc_highlight {
+	display: inline;
+	font-size: 32px;
+	line-height: 86px;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 14px 0;
+	font-weight: 800;
+}
+
+.uc_instatitle {
+	padding: 20px 0px 10px;
+}
+
+.uc_inline-icons {
+	display: inline-block;
+}
+
+.uc_thin-heading {
+	font-weight: 200;
+	margin-top: 8px;
+}
+
+.uc_thin-heading>a:hover {
+	color: #4200FF;
+}
+
+@media (max-width: 480px) {
+	.uc_paragraph {
+	font-size: 22px;
+	}
+}
+

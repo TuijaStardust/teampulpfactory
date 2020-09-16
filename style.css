@@ -1,0 +1,158 @@
+/* --GLOBAALIT MUUTOKSET-- */
+
+/* Navigaation täppien yläreunan tasaus*/
+
+.qodef-header-navigation>ul>li {
+	height: 100%;
+	padding: 0 24px;
+	align-self: baseline;
+}
+
+/* Header - Sticky header säätö ettei valu näkyviin*/ 
+
+.qodef-header-sticky {
+	height: 180px;
+}
+
+/* Header - Logon leveyden säätö*/
+#qodef-page-header .qodef-header-logo-link img {
+	width: 100%;
+}
+
+/*Footer - korkeuden säätö */
+#qodef-page-footer-top-area {
+	padding: 70px 0 20px;
+}
+
+/* Footer - Widget otsikot*/
+.qodef-widget-title {
+	font-size: 36px;
+}
+
+/* Footer - ensimmäinen kolumni */
+
+.footer-text>p {
+	font-family: Barlow condensed, sans-serif;
+	font-size: 21px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+/* Footer - keskimmäinen kolumni*/
+#nav_menu-2 {
+	padding-left: 16%;
+}
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) li {
+	margin: 0;
+	font-family: Barlow condensed, sans-serif;
+	font-size: 21px;
+	font-weight: 800;
+	text-transform: uppercase;	
+}
+
+/* Instagram - BW filter */
+#sbi_images {
+	filter: grayscale(100%);
+}
+
+/* --Kuuden ruudun ruudukko-- */
+
+/* Info Section taustanumero/-kirjan */
+
+.qodef-info-section.qodef-layout--background-text.qodef-background-text-pos--center .qodef-m-background-text {
+    font-size: 300px;
+	font-weight: 600;
+}
+
+/* ____10.7. Versio Alla_____________ */
+
+/* --GLOBAALIT MUUTOKSET-- */
+
+/* Navigaation täppien yläreunan tasaus*/
+
+.qodef-header-navigation>ul>li {
+	height: 100%;
+	padding: 0 24px;
+	align-self: baseline;
+}
+
+/* Header - Sticky header säätö ettei valu näkyviin*/ 
+
+.qodef-header-sticky {
+	height: 180px;
+}
+
+/* Header - Logon leveyden säätö*/
+#qodef-page-header .qodef-header-logo-link img {
+	width: 100%;
+}
+
+/*Footer - korkeuden säätö */
+#qodef-page-footer-top-area {
+	padding: 70px 0 20px;
+}
+
+/* Footer - Widget otsikot*/
+.qodef-widget-title {
+	font-size: 36px;
+}
+
+/* Footer - ensimmäinen kolumni */
+
+.footer-text>p {
+	color: white;
+	font-family: Barlow condensed, sans-serif;
+	font-size: 21px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+/* footerin iconi+teksti rivien tekstin säädöt */
+.qodef-icon-list-item>p {
+	font-size: 21px;
+	font-weight: 800;
+}
+
+/* Footer - keskimmäinen kolumni*/
+#nav_menu-2 {
+	padding-left: 16%;
+}
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) li {
+	margin: 0;
+	font-family: Barlow condensed, sans-serif;
+	font-size: 21px;
+	font-weight: 800;
+	text-transform: uppercase;	
+}
+
+/* Instagram - BW filter */
+#sbi_images {
+	filter: grayscale(100%);
+}
+
+/* --Kuuden ruudun ruudukko-- */
+
+/* Info Section taustanumero/-kirjan */
+
+.qodef-info-section.qodef-layout--background-text.qodef-background-text-pos--center .qodef-m-background-text {
+    font-size: 300px;
+	font-weight: 600;
+}
+
+/* Ylimääräinen tyhjä pois sivun lopusta */
+
+#qodef-page-inner {
+    padding-bottom: 30px;
+}
+
+/* Siniset linkit paragrafitekstissä */
+p a {
+	color: #4200ff;
+}
+
+/* Portfoliosivun sisällön laskeminen headerin alle */
+/*
+
+
