@@ -1,4 +1,4 @@
-/* 2020-08-05 /by Tuija Stardust */
+/* 2020-09-16 /by Tuija Stardust */
 
 /* --GLOBAALIT MUUTOKSET-- */
 
@@ -30,8 +30,6 @@
 	margin-bottom: 80px;
 }
 
-
-
 /* Ylimääräinen tyhjä pois sivun alusta ja lopusta */
 
 #qodef-page-inner {
@@ -54,6 +52,10 @@ p a {
 	font-style: italic;
 }
 
+.tpf_semi-bold {
+	font-weight: 700;
+}
+
 /* HEADER */
 
 /* Navigaation täppien yläreunan tasaus*/
@@ -64,7 +66,7 @@ p a {
     align-self: baseline;
 }
 
-/* Header - Sticky header säätö ettei valu näkyviin */
+/* Header - Sticky header säätö ettei valu näkyviin*/
 
 .qodef-header-sticky {
     height: 160px;
@@ -325,7 +327,7 @@ p a {
 /* Creative Services & Production Agency*/
 
 .tpf_services-title {
-	font-family: Barlow Semi Condensed;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .tpf_services-textbox>p {
@@ -387,7 +389,7 @@ p a {
 }
 
 .qodef-portfolio-info-item>a {
-	font-family: Barlow Condensed;
+	font-family: Barlow Condensed, sans-serif;
 	text-transform: uppercase;	
 }
 /* Social follow icons*/
@@ -418,6 +420,26 @@ h5.tpf_social-follow-kavyar {
 	font-size: 22px;
 }
 
+/* ABOUT US*/
+
+    .tpf_about-us-textbox {
+        margin-bottom: 120px;
+    }
+
+    .tpf_about-us-textbox>p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tpf_about-us-highlight {
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    .tpf_about-us-textbox>h3 {
+        margin: 40px 0;
+    }
+
 /* CONTACT US_*/
 
 .tpf_cu-textbox>p {
@@ -439,6 +461,14 @@ h5.tpf_social-follow-kavyar {
 .tpf_cu-application-strongtext {
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.tpf_cu-list {
+	color: #000;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-family: Barlow Semi Condensed;
+	font-weight: 700;
 }
 
 
@@ -469,6 +499,7 @@ h5.tpf_social-follow-kavyar {
 .qodef-icon-list-item>p {
     font-size: 21px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 /* Footer - keskimmäinen kolumni*/
@@ -504,6 +535,51 @@ h5.tpf_social-follow-kavyar {
 }
 
 /* MODUULIT */
+
+/* Team Members laatikko*/
+
+    .tpf_flexbox-justified {
+        justify-content: center;
+    }
+
+    .tpf_team-columns {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 400px; 
+        margin: 0 20px;
+    }
+
+    .tpf_team-member-img-container {
+        width: 400px;
+        max-height: 516px;
+        margin: 0;
+    }
+
+    .tpf_team-member-text {
+        display: block;
+        position: relative;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+
+    .tpf_team-member-titlebox {
+        height: 80px;
+    }
+
+    .tpf_team-member-textarea {
+        padding-right: 80px;
+    }
+
+    .tpf_team-member-textarea>h4 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: none;
+    }
+
+    .tpf_team-member-textarea>p {
+        line-height: 20px;
+    }
 
 /* Custom built quote thingie */
 
@@ -613,7 +689,7 @@ h5.tpf_social-follow-kavyar {
 
 .tpf_member-title {
 	display: inline-block;
-	font-family: Barlow Condensed ;
+	font-family: Barlow Condensed, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
