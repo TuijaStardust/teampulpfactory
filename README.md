@@ -1,4 +1,5 @@
 # WordPress Project 
+(july 2020 - october 2020)
 ## teampulpfactory
 
 ***
